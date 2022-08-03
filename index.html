@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CV Using HTML & CSS</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<style>
+    * {margin: 0;padding: 0;}
+
+body{font-family: 'Montserrat', sans-serif;}
+
+#page {
+    min-height: 200px;
+    width: 60%;
+    min-width: 600px;
+    background: whitesmoke;
+    margin: 50px auto;
+    padding: 30px;
+    color: #27aae1;
+}
+
+.photo-and-name {
+    /* NO STYLE NEEDED YET */
+}
+
+.photo {
+    width: 15%;
+    min-width: 130px;
+    float: left;
+    margin-right: 20px;
+}
+
+.contact-info-box {
+    width: 70.9%;
+    display: inline-block;
+}
+
+.name {
+    margin-bottom: -5px;
+}
+.job-title {
+    display: inline-block;
+}
+
+.contact-details {
+    background: #27aae1;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+#objective {
+    
+}
+
+#objective h3 {
+    border: 1px solid #d3d3d3;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 30px 0 10px;
+}
+
+#objective p {
+    padding: 0 5px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #000;
+}
+
+#education h3 {
+    border: 1px solid #d3d3d3;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 30px 0 10px;
+}
+
+#education table td {
+    padding: 5px;
+    font-size: 14px;
+    color: #000;
+}
+
+#education table tr.school-1 td:first-child {
+    width: 120px;
+    color: gray;
+    padding-bottom: 25px;
+}
+
+#education table tr.school-2 td:first-child {
+    padding-bottom: 25px;
+}
+
+#work h3 {
+    border: 1px solid #d3d3d3;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 30px 0 10px;
+}
+
+#work table td {
+    padding: 5px;
+    font-size: 14px;
+    color: #000;
+}
+
+#work table tr.work-1 td:first-child {
+    width: 120px;
+    color: gray;
+    padding-bottom: 25px;
+}
+
+#work table tr.work-1 td {
+    padding-bottom: 25px;
+}
+
+#work table tr.work-2 td:first-child {
+    width: 120px;
+    color: gray;
+}
+
+#bio-data h3 {
+    border: 1px solid #d3d3d3;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 30px 0 10px;
+}
+
+#bio-data table td {
+    padding: 8px;
+    font-size: 15px;
+    color: #000;
+}
+
+#bio-data table tr td:first-child {
+    width: 200px;
+}
+
+#bio-data table tr td:nth-child(2) {
+    width: 300px;
+}
+</style>
+
+</head>
+<body>
+   
+<div id="page">
+    <div class="photo-and-name">
+        <img src="data:image/jpeg;base64,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" class="photo" alt="Profile Picture">
+        <div class="contact-info-box">
+            <h1 class="name">Ahsan Raza</h1>
+            <br>
+            <h3 class="job-title">Student</h3>
+            <p class="contact-details">Phone: +92-344-4463-123 &nbsp; - &nbsp; Email: ahsanrazasyedahsan@gmail.com</p>
+        </div>
+    </div>
+    <div id="objective">
+        <h3>Objective</h3>
+        <p>
+            To take a challenging and managerial role in the field of Computer programming and implement the expertise and experience gained in this field to develop complex project with efficiency and quality. 
+        </p>
+    </div>
+    <div id="education">
+        <h3>Education</h3>
+        <table>
+            <tr class="school-1">
+                <td rowspan="2">2008 - 2019</td>
+                <td><b>School-1</b>: Metropolis School</td>
+            </tr>
+            <tr class="school-2">
+                <td><b>College</b>: Dehli College</td>
+            </tr>
+            
+            <tr class="school-1">
+                <td rowspan="2">2019 - 2021</td>
+                <td><b></b>Intermediate</td>
+            </tr>
+            <tr class="school-2">
+                <td><b>The Aptech </b>: Web Designing (HTML, CSS, JS, Bootstrap)</td>
+            </tr>
+            
+            <tr>
+                <td style="width: 120px; color: gray;">2019 - 2021</td>
+                <td><b>Intermediate</b>: Board of Intermediate Karachi - Private</td>
+            </tr>
+        </table>
+    </div>
+    <div id="work">
+        <h3>Experience</h3>
+        <table>
+            <tr class="work-1">
+                <td>2019 - 2021</td>
+                <td><b>Shah college</b>: As Tutor</td>
+            </tr>
+            <tr class="work-2">
+                <td>2015 - Present</td>
+                <td><b>Reliable Punching</b>: More than 2 years' experience as an IT Manager and Customer Service Representative</td>
+            </tr>
+ 
+        </table>
+    </div>
+    <div id="bio-data">
+        <h3>Bio-Data</h3>
+        <table>
+            <tr>
+                <td>F'Name:</td>
+                <td><b>Waseem aRaza</b></td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td><b>15<sup>th</sup> November 1996</b></td>
+            </tr>
+            <tr>
+                <td>CNIC:</td>
+                <td><b>42401-5853927-3</b></td>
+            </tr>
+            <tr>
+                <td>Religion:</td>
+                <td><b>Islam</b></td>
+            </tr>
+            <tr>
+                <td>Nationality:</td>
+                <td><b>Pakistani</b></td>
+            </tr>
+            <tr>
+                <td>Marital Status:</td>
+                <td><b>Unmarried</b></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
